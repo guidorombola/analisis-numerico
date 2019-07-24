@@ -18,7 +18,7 @@ prob += x13 + x23 - x34 == 0
 prob += x12 + x13
 
 # Resolvemos el problema
-status = prob.solve(pulp.GLPK())
+status = prob.solve()
 print(LpStatus[status])
 
 print(x12.value())
